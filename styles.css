@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Updated background color to light grey */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Space items evenly */
+}
+h1, h2, h3 {
+    animation: slideIn 1s ease forwards; /* Kinetic effect for headings */
+    color: #333; /* Changed color for headings to a darker shade for better contrast */
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* Changed section background to white */
+
+    animation: fadeIn 1s ease forwards; /* Kinetic effect for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer {
+    background: #333; /* Dark background for footer for better visibility */
+    padding: 10px 0;
+    text-align: center;
+    color: white; /* Keep text color white for contrast */
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+    /* Ensure kinetic effect is applied */
+    text-align: center; /* Center align headings */
+}
+
+/* Chart container styles */
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.chart-container canvas {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+#visualizations {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    animation: fadeIn 1s ease forwards;
+}
